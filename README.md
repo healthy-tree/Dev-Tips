@@ -1,3 +1,3 @@
 # Dev-Tips
 
-Development Tips. 
+Development Tips
