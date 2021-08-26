@@ -1,0 +1,63 @@
+= cURL Tips
+:numbered:
+:toc: auto
+:doctype: article
+
+== 概述
+
+简单介绍使用curl测试 REST API 接口。
+
+[TIP]
+====
+curl 是一个传输数据的命令行工具，支持22种网络协议（包括Http协议）。非常适合简单的测试REST API 接口。
+====
+
+== 简单命令
+
+=== verbose
+
+[source,bash]
+.testVerbose.sh
+----
+curl -v https://www.example.com/
+----
+
+=== output
+
+[source,bash]
+.testOutput.sh
+----
+curl -o output.json https://www.example.com/
+----
+
+=== Http
+
+==== Get
+
+默认方法，
+
+[source,bash]
+.testGet.sh
+----
+curl --request GET -sL \
+     --url 'http://example.com'\
+     --output './path/to/file'
+
+----
+
+==== Post
+
+'Data options'
+
+'Head info'
+
+==== Put
+[source,bash]
+.testPut.sh
+----
+-X put
+----
+
+
+
+
